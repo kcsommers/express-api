@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+	<h1>All the songs:</h1>
+	<ul>
+		<% songs.forEach(function(song, i) { %>
+			<li><%= song.name %> is on the album <%= song.album %> <a href="/songs/<%= i %>">DELETE</a></li>
+		<% }); %>
+	</ul>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>
